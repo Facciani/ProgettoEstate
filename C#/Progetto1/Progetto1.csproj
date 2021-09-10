@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1.PNG" />
+    <None Remove="2.png" />
+    <None Remove="arrow.png" />
+    <None Remove="check.jpg" />
+    <None Remove="check.PNG" />
+    <None Remove="check1.png" />
+    <None Remove="locandina1.jpg" />
+    <None Remove="locandina2.jpg" />
+    <None Remove="locandina3.jpg" />
+    <None Remove="posto_libero.jpg" />
+    <None Remove="posto_occupato.jpg" />
+    <None Remove="posto_prenotato.jpg" />
+    <None Remove="schema_cinema.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1.PNG" />
+    <Resource Include="2.png" />
+    <Resource Include="arrow.png" />
+    <Resource Include="check.PNG" />
+    <Resource Include="locandina1.jpg" />
+    <Resource Include="locandina2.jpg" />
+    <Resource Include="locandina3.jpg" />
+    <Resource Include="posto_libero.jpg" />
+    <Resource Include="posto_occupato.jpg" />
+    <Resource Include="posto_prenotato.jpg" />
+    <Resource Include="schema_cinema.PNG" />
+  </ItemGroup>
+
+</Project>

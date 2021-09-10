@@ -1,0 +1,42 @@
+﻿<Window x:Class="Progetto1.Prenotazione"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Progetto1"
+        mc:Ignorable="d"
+        Title="Prenotazione" Height="850" Width="1200" Background="Yellow" VerticalAlignment="Stretch">
+    <Grid>
+        <TextBox HorizontalAlignment="Center" Margin="0,10,0,0" Text="Prenotazione biglietti" TextWrapping="Wrap" VerticalAlignment="Top" Width="806" Height="75" Background="Yellow" FontSize="40" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
+        <Image x:Name="img" HorizontalAlignment="Right" Height="276" Margin="0,161,955,0" VerticalAlignment="Top" Width="220"/>
+        <TextBox x:Name="title" HorizontalAlignment="Left" Margin="24,455,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Height="160" Background="{x:Null}" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93"/>
+        <Image x:Name="btnBack" HorizontalAlignment="Left" Height="75" Margin="10,-4,0,0" VerticalAlignment="Top" Width="100" Source="/arrow.png" RenderTransformOrigin="0.5,0.5" PreviewMouseLeftButtonDown="btnBack_PreviewMouseLeftButtonDown">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="492" Margin="283,128,0,0" VerticalAlignment="Top" Width="893" Source="/schema_cinema.PNG"/>
+        <TextBox HorizontalAlignment="Left" Margin="181,615,0,0" Text="Posti Liberi:" TextWrapping="Wrap" VerticalAlignment="Top" Width="359" Height="75" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Margin="204,657,0,0" Text="Posti occupati:" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="75" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
+        <TextBox x:Name="postiLiberi1" HorizontalAlignment="Left" Margin="441,615,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Height="37" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
+        <TextBox x:Name="postiOccupati1" HorizontalAlignment="Left" Margin="485,658,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Height="36" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
+        <Image HorizontalAlignment="Left" Height="82" Margin="956,10,0,0" VerticalAlignment="Top" Width="234" Source="/1.PNG"/>
+        <TextBox HorizontalAlignment="Left" Margin="203,699,0,0" Text="Posti prenotati:" TextWrapping="Wrap" VerticalAlignment="Top" Width="359" Height="75" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
+        <TextBox x:Name="postiPrenotati1" HorizontalAlignment="Left" Margin="488,700,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Height="36" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
+        <Image x:Name="posto2" HorizontalAlignment="Left" Height="100" Margin="640,259,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto2_PreviewMouseLeftButtonDown"/>
+        <Image x:Name="posto3" HorizontalAlignment="Left" Height="100" Margin="916,259,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto3_PreviewMouseLeftButtonDown"/>
+        <Image x:Name="posto4" HorizontalAlignment="Left" Height="100" Margin="360,350,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto4_PreviewMouseLeftButtonDown"/>
+        <Image x:Name="posto5" HorizontalAlignment="Left" Height="100" Margin="640,350,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto5_PreviewMouseLeftButtonDown"/>
+        <Image x:Name="posto6" HorizontalAlignment="Left" Height="100" Margin="916,350,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto6_PreviewMouseLeftButtonDown"/>
+        <Image x:Name="posto7" HorizontalAlignment="Left" Height="100" Margin="360,440,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto7_PreviewMouseLeftButtonDown"/>
+        <Image x:Name="posto8" HorizontalAlignment="Left" Height="100" Margin="640,440,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto8_PreviewMouseLeftButtonDown"/>
+        <Image x:Name="posto9" HorizontalAlignment="Left" Height="100" Margin="916,440,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto9_PreviewMouseLeftButtonDown"/>
+        <Image x:Name="posto1" HorizontalAlignment="Left" Height="100" Margin="360,259,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto1_PreviewMouseLeftButtonDown"/>
+
+    </Grid>
+</Window>

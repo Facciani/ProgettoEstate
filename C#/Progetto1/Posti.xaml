@@ -1,0 +1,20 @@
+﻿<Window x:Class="Progetto1.Posti"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Progetto1"
+        mc:Ignorable="d"
+        Title="Posti" Height="300" Width="500" Background="Yellow">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Margin="10,69,0,0" Text="Inserire nome cliente:&#xD;&#xA;" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Height="34" Background="Yellow" FontSize="20" HorizontalContentAlignment="Left" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True" VerticalContentAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,119,0,0" Text="Inserire cognome cliente:" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Height="34" Background="Yellow" FontSize="20" HorizontalContentAlignment="Left" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True" VerticalContentAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="10,170,0,0" Text="Inserire età cliente:" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="34" Background="Yellow" FontSize="20" HorizontalContentAlignment="Left" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True" VerticalContentAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="52" Margin="320,10,0,0" VerticalAlignment="Top" Width="170" Source="/1.PNG"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Margin="213,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="34" Background="Yellow" FontSize="20" HorizontalContentAlignment="Left" BorderBrush="Yellow" FontFamily="Bauhaus 93" VerticalContentAlignment="Top"/>
+        <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Margin="248,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="34" Background="Yellow" FontSize="20" HorizontalContentAlignment="Left" BorderBrush="Yellow" FontFamily="Bauhaus 93" VerticalContentAlignment="Top"/>
+        <TextBox x:Name="txtEta" HorizontalAlignment="Left" Margin="193,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Height="34" Background="Yellow" FontSize="20" HorizontalContentAlignment="Left" BorderBrush="Yellow" FontFamily="Bauhaus 93" VerticalContentAlignment="Top"/>
+        <Image x:Name="btn" HorizontalAlignment="Left" Height="68" Margin="408,214,0,0" VerticalAlignment="Top" Width="100" Source="/check.PNG" PreviewMouseLeftButtonDown="btn_PreviewMouseLeftButtonDown"/>
+
+    </Grid>
+</Window>

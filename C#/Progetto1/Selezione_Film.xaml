@@ -1,0 +1,29 @@
+﻿<Window x:Class="Progetto1.Selezione_Film"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Progetto1"
+        mc:Ignorable="d"
+        Title="Scegliere Il Film" Height="650" Width="1000" Background="Yellow">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="328" Margin="49,98,0,0" VerticalAlignment="Top" Width="288" Source="/locandina1.jpg"/>
+        <Image HorizontalAlignment="Center" Height="330" Margin="0,98,0,0" VerticalAlignment="Top" Width="276" Source="/locandina2.jpg" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.239"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.496"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="328" Margin="724,98,0,0" VerticalAlignment="Top" Width="222" Source="/locandina3.jpg"/>
+        <Image HorizontalAlignment="Left" Height="82" Margin="10,10,0,0" VerticalAlignment="Top" Width="234" Source="/1.PNG"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,541,0,0" Text="Film disponibili in sala" TextWrapping="Wrap" VerticalAlignment="Top" Width="806" Height="75" Background="Yellow" FontSize="40" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93"/>
+        <Image x:Name="btn1" HorizontalAlignment="Left" Height="83" Margin="122,431,0,0" VerticalAlignment="Top" Width="86" Source="/arrow.png" PreviewMouseLeftButtonDown="btn1_PreviewMouseLeftButtonDown"/>
+        <Image x:Name="btn2" HorizontalAlignment="Center" Height="83" Margin="0,431,0,0" VerticalAlignment="Top" Width="86" Source="/arrow.png" PreviewMouseLeftButtonDown="btn2_PreviewMouseLeftButtonDown"/>
+        <Image HorizontalAlignment="Left" Height="83" Margin="793,431,0,0" VerticalAlignment="Top" Width="86" Source="/arrow.png" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown"/>
+
+    </Grid>
+</Window>
