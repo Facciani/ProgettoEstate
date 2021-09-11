@@ -17,6 +17,8 @@ namespace Progetto1
     /// </summary>
     public partial class Posti : Window
     {
+        string num;
+        int el = 0;
         string numPosto = "";
         string[] vett1 = new string[9];
         public Posti()
@@ -30,15 +32,17 @@ namespace Progetto1
             numPosto = p;
         }
 
-        public Posti(string p, string[] vett)
+        public Posti(string p, string[] vett, string numfilm)
         {
             InitializeComponent();
             numPosto = p;
+            num = numfilm;
 
             vett1 = vett;
 
             if(vett1[Int32.Parse(p) - 1] != "0")
             {
+                el = 1;
                 string[] a = vett1[Int32.Parse(p) - 1].Split(';');
 
                 txtNome.Text = a[0];
@@ -56,14 +60,28 @@ namespace Progetto1
                 {
                     if(txtEta.Text != "")
                     {
-                        line = txtNome.Text + ";" + txtCognome.Text + ";" + txtEta.Text + ";" + "1";
+                        string a = "";
+                        if (Int32.Parse(txtEta.Text) < 14)
+                        {
+                            a = "6";
+                            line = txtNome.Text + ";" + txtCognome.Text + ";" + txtEta.Text + ";" + "1" + ";" + a + ";" + numPosto;
+                        }
+                        else
+                        {
+                            a = "8";
+                            line = txtNome.Text + ";" + txtCognome.Text + ";" + txtEta.Text + ";" + "1" + ";" + a + ";" + numPosto;
+                        }
 
-                        vett1[Int32.Parse(numPosto) - 1] = line;
+                        var result = MessageBox.Show("Sei sicuro di voler comprare questo posto? Il prezzo sarà di: " + a + "€", "Aqcuisto" ,MessageBoxButton.YesNo,MessageBoxImage.Question);
 
-                        Prenotazione p = new Prenotazione(vett1);
-                        p.Show();
-                        this.Hide();
+                        if(result == MessageBoxResult.Yes)
+                        {
+                            vett1[Int32.Parse(numPosto) - 1] = line;
 
+                            Prenotazione p = new Prenotazione(vett1,num);
+                            p.Show();
+                            this.Hide();
+                        }
                     }
                     else
                     {
@@ -79,6 +97,30 @@ namespace Progetto1
             {
                 MessageBox.Show("Dati Mancanti", "Errore", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void cestinoimg_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            string line = "0";
+            if (el == 1)
+            {
+                var result = MessageBox.Show("Sei sicuro di voler eliminare questo posto", "Cancellazione", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    vett1[Int32.Parse(numPosto) - 1] = line;
+
+                    Prenotazione p = new Prenotazione(vett1, num);
+                    p.Show();
+                    this.Hide();
+                }
+            }
+        }
+
+        private void btnBack_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Prenotazione p = new Prenotazione(vett1, num);
+            p.Show();
+            this.Hide();
         }
     }
 }

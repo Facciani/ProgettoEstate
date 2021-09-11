@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Scuola\\Vacanze_2021_22\\Progetto\\C#\\Progetto1\\Progetto1.csproj": {}
+    "D:\\Scuola\\GitHub\\ProgettoEstate\\C#\\Progetto1\\Progetto1.csproj": {}
   },
   "projects": {
-    "D:\\Scuola\\Vacanze_2021_22\\Progetto\\C#\\Progetto1\\Progetto1.csproj": {
+    "D:\\Scuola\\GitHub\\ProgettoEstate\\C#\\Progetto1\\Progetto1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Scuola\\Vacanze_2021_22\\Progetto\\C#\\Progetto1\\Progetto1.csproj",
+        "projectUniqueName": "D:\\Scuola\\GitHub\\ProgettoEstate\\C#\\Progetto1\\Progetto1.csproj",
         "projectName": "Progetto1",
-        "projectPath": "D:\\Scuola\\Vacanze_2021_22\\Progetto\\C#\\Progetto1\\Progetto1.csproj",
+        "projectPath": "D:\\Scuola\\GitHub\\ProgettoEstate\\C#\\Progetto1\\Progetto1.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Scuola\\Vacanze_2021_22\\Progetto\\C#\\Progetto1\\obj\\",
+        "outputPath": "D:\\Scuola\\GitHub\\ProgettoEstate\\C#\\Progetto1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

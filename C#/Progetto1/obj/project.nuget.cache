@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sKh/4RdNeKmeOb4jlDZEt6MqPfWkmcqj9Ied57RzF7Hy7rVVYWGWujQf/kEmatgJ7BPZae/ixbmXVhNy2Ox7YQ==",
+  "dgSpecHash": "mRmCeNjzWSumbgFmj0odydc+Y8uitYDTpNjOBfOTUx8NuoIgMkkivmMnv6JstlpOp6EQcNCwKlojKr7/jmiTsw==",
   "success": true,
-  "projectFilePath": "D:\\Scuola\\Vacanze_2021_22\\Progetto\\C#\\Progetto1\\Progetto1.csproj",
+  "projectFilePath": "D:\\Scuola\\GitHub\\ProgettoEstate\\C#\\Progetto1\\Progetto1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",

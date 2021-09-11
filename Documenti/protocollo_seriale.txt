@@ -1,0 +1,11 @@
+Protocollo di comunicazione seriale
+
+-----------------------------------
+Arduino --> Java:
+-----------------------------------
+
+string(distanza);
+
+-----------------------------------
+
+velocità = ogni 500ms

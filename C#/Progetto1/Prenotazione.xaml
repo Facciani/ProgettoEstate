@@ -26,8 +26,8 @@
         <TextBox x:Name="postiLiberi1" HorizontalAlignment="Left" Margin="441,615,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Height="37" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
         <TextBox x:Name="postiOccupati1" HorizontalAlignment="Left" Margin="485,658,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Height="36" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
         <Image HorizontalAlignment="Left" Height="82" Margin="956,10,0,0" VerticalAlignment="Top" Width="234" Source="/1.PNG"/>
-        <TextBox HorizontalAlignment="Left" Margin="203,699,0,0" Text="Posti prenotati:" TextWrapping="Wrap" VerticalAlignment="Top" Width="359" Height="75" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
-        <TextBox x:Name="postiPrenotati1" HorizontalAlignment="Left" Margin="488,700,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Height="36" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Margin="251,700,0,0" Text="Posti prenotati:" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Height="74" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
+        <TextBox x:Name="postiPrezzo1" HorizontalAlignment="Left" Margin="471,739,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Height="36" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
         <Image x:Name="posto2" HorizontalAlignment="Left" Height="100" Margin="640,259,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto2_PreviewMouseLeftButtonDown"/>
         <Image x:Name="posto3" HorizontalAlignment="Left" Height="100" Margin="916,259,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto3_PreviewMouseLeftButtonDown"/>
         <Image x:Name="posto4" HorizontalAlignment="Left" Height="100" Margin="360,350,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto4_PreviewMouseLeftButtonDown"/>
@@ -37,6 +37,9 @@
         <Image x:Name="posto8" HorizontalAlignment="Left" Height="100" Margin="640,440,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto8_PreviewMouseLeftButtonDown"/>
         <Image x:Name="posto9" HorizontalAlignment="Left" Height="100" Margin="916,440,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto9_PreviewMouseLeftButtonDown"/>
         <Image x:Name="posto1" HorizontalAlignment="Left" Height="100" Margin="360,259,0,0" VerticalAlignment="Top" Width="100" PreviewMouseLeftButtonDown="posto1_PreviewMouseLeftButtonDown"/>
+        <TextBox HorizontalAlignment="Left" Margin="258,737,0,0" Text="Prezzo totale:" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" Height="75" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
+        <TextBox x:Name="postiPrenotati1" HorizontalAlignment="Left" Margin="498,699,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Height="36" Background="Yellow" FontSize="30" HorizontalContentAlignment="Center" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True"/>
+        <Image x:Name="imgShop" HorizontalAlignment="Left" Height="123" Margin="1034,701,0,0" VerticalAlignment="Top" Width="194" Source="/carello.png" PreviewMouseLeftButtonDown="imgShop_PreviewMouseLeftButtonDown"/>
 
     </Grid>
 </Window>

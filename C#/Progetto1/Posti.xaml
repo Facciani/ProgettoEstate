@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Progetto1"
         mc:Ignorable="d"
-        Title="Posti" Height="300" Width="500" Background="Yellow">
+        Title="Posti" Height="326" Width="522" Background="Yellow">
     <Grid>
         <TextBox HorizontalAlignment="Left" Margin="10,69,0,0" Text="Inserire nome cliente:&#xD;&#xA;" TextWrapping="Wrap" VerticalAlignment="Top" Width="209" Height="34" Background="Yellow" FontSize="20" HorizontalContentAlignment="Left" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True" VerticalContentAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="10,119,0,0" Text="Inserire cognome cliente:" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Height="34" Background="Yellow" FontSize="20" HorizontalContentAlignment="Left" BorderBrush="Yellow" FontFamily="Bauhaus 93" IsReadOnly="True" VerticalContentAlignment="Top"/>
@@ -15,6 +15,17 @@
         <TextBox x:Name="txtCognome" HorizontalAlignment="Left" Margin="248,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192" Height="34" Background="Yellow" FontSize="20" HorizontalContentAlignment="Left" BorderBrush="Yellow" FontFamily="Bauhaus 93" VerticalContentAlignment="Top"/>
         <TextBox x:Name="txtEta" HorizontalAlignment="Left" Margin="193,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="48" Height="34" Background="Yellow" FontSize="20" HorizontalContentAlignment="Left" BorderBrush="Yellow" FontFamily="Bauhaus 93" VerticalContentAlignment="Top"/>
         <Image x:Name="btn" HorizontalAlignment="Left" Height="68" Margin="408,214,0,0" VerticalAlignment="Top" Width="100" Source="/check.PNG" PreviewMouseLeftButtonDown="btn_PreviewMouseLeftButtonDown"/>
+        <Image x:Name="cestinoimg" HorizontalAlignment="Left" Height="85" Margin="344,206,0,0" VerticalAlignment="Top" Width="63" Source="/cestino.jpg" PreviewMouseLeftButtonDown="cestinoimg_PreviewMouseLeftButtonDown"/>
+        <Image x:Name="btnBack" HorizontalAlignment="Left" Height="47" Margin="10,7,0,0" VerticalAlignment="Top" Width="65" Source="/arrow.png" RenderTransformOrigin="0.5,0.5" PreviewMouseLeftButtonDown="btnBack_PreviewMouseLeftButtonDown">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
 
     </Grid>
 </Window>
